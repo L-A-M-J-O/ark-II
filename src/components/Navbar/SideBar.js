@@ -16,7 +16,7 @@ export default function SideBar() {
         {
           isOpen && (
             <div className={`${isOpen? 'active' : 'inactive'}`}>
-              <h1>Manuel</h1>
+              <h1>Alan</h1>
             </div>
           )
         }  
