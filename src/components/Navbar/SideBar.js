@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState,  } from 'react';
 
 // Style
 import './SideBar.css';
@@ -10,13 +10,18 @@ export default function SideBar() {
   return (
     <>
       <nav> 
-        <button onClick={() => { setIsOpen(!isOpen)}} className='btn bg-dark text-white'>
+        <button onClick={() => { setIsOpen(!isOpen)}} className =' manuel btn bg-dark text-white'>
           <span>Home</span>
-        </button>
+        </button >
         {
           isOpen && (
             <div className={`${isOpen? 'active' : 'inactive'}`}>
-              <h1>Alan</h1>
+              <div className='sidebar'>
+              <h3>DLC</h3>
+              <h3>NEWS</h3>
+              <h3>SERVIDORES</h3>
+              <h3>ABOUT TEAM</h3>
+              </div>
             </div>
           )
         }  
