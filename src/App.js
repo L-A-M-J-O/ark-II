@@ -1,8 +1,8 @@
+// Main App
 import './App.css';
 
-import { Routes, Route,} from 'react-router-dom'
-import { Home } from './Home';
-import { Dino } from './Dino';
+// Layaout
+import Layaout from './layout/Layaout';
 
 // Logica se va a mostrar Ark
 // DLC cada DLC mostrara cada dino que contiene ese map y solo ese map
@@ -12,10 +12,7 @@ import { Dino } from './Dino';
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/Dino" element={<Dino/>}/>
-      </Routes>
+      <Layaout/>
     </>
   );
 }
