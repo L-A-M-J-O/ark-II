@@ -9,22 +9,28 @@ export default function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav> 
-        <button onClick={() => { setIsOpen(!isOpen)}} className =' manuel btn bg-dark text-white'>
-          <span>Home</span>
-        </button >
-        {
-          isOpen && (
-            <div className={`${isOpen? 'active' : 'inactive'}`}>
-              <div className='sidebar'>
-              <h3>DLC</h3>
-              <h3>NEWS</h3>
-              <h3>SERVIDORES</h3>
-              <h3>ABOUT TEAM</h3>
+      <nav>
+        <div className='row box-menu'>
+          <div className='col-12 p-0 mx-2'>
+            <button onClick={() => { setIsOpen(!isOpen)}} className='menu-hamburger'>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          {
+            isOpen && (
+              <div className={`${isOpen? 'active' : 'inactive'} sidebar`}>
+                <div className=''>
+                <h3>DLC</h3>
+                <h3>NEWS</h3>
+                <h3>SERVIDORES</h3>
+                <h3>ABOUT TEAM</h3>
+                </div>
               </div>
-            </div>
-          )
-        }  
+            )
+          } 
+        </div>
       </nav>
     </>
   )

@@ -1,8 +1,32 @@
-/* Style menu start */
-.menu__box {
-  width: 100%;
-  bottom: 0px;
+.box-menu  {
+  border-bottom: none;
+  height: 100vh;
+  width: 70px;
 }
-/* Style menu end */ 
-/* Style main-video start */
-/* Style main-video end */
+.menu-hamburger {
+  cursor: pointer;
+  background: transparent;
+  border: 0px;
+}
+span::before {
+  content: "»";
+  font-size: 30px;
+}
+span:hover {
+  content: "";
+  width: 100px;
+  height: 10px;
+}
+
+.sidebar {
+  transition: 0.5s;
+  width: 100px;
+  height: 200px;
+  background-color: gray;
+}
+.sidebar:hover {
+  transform: translateX(5px);
+  width: 100px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+}
